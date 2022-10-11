@@ -1,0 +1,68 @@
+libreplaygain (1.0~r475-1) unstable; urgency=low
+
+  * Team upload.
+  * New snapshot, no relevant changes.
+  * Fix team's name.
+  * Add missing Vcs-* plugins.
+  * Switch packaging to source format 3.0 (quilt).
+  * Refresh and convert patches to the quilt format.
+  * Switch to dh-autoreconf.
+  * Build with Multiarch support.
+  * Introduce symbols file, drop dh_makeshlibs -V option.
+  * Add automake, libtool on Build-Depends.
+  * Extend long description, remove trailing blank line.
+  * Breaks is more appropriate than the Conflicts field.
+  * Add watch file.
+  * Bump Standards.
+
+ -- Alessio Treglia <alessio@debian.org>  Wed, 15 Feb 2012 15:11:10 +0100
+
+libreplaygain (1.0~r447-1) unstable; urgency=low
+
+  * New bugfix SVN snapshot.
+  * debian/control:
+    + Update Standards-Version to 3.8.3, no additional changes needed.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 20 Oct 2009 20:00:47 +0200
+
+libreplaygain (1.0~r412-2) unstable; urgency=low
+
+  * debian/rules:
+    + Update shlibs for the new API.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 04 Mar 2009 10:19:39 +0100
+
+libreplaygain (1.0~r412-1) unstable; urgency=low
+
+  * New upstream SVN snapshot.
+  * Upload to unstable.
+  * debian/control:
+    + Update Standards-Version to 3.8.0, no additional changes needed.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 04 Mar 2009 10:06:08 +0100
+
+libreplaygain (1.0~r406-1) experimental; urgency=low
+
+  * New upstream SVN snapshot:
+    + debian/control:
+      - Conflicts with older musepack-tools because of slight changes to the
+        still unstable API.
+  * debian/rules:
+    + Correctly set shlibs version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 22 May 2008 11:00:21 +0200
+
+libreplaygain (1.0~r394-2) experimental; urgency=low
+
+  * debian/control:
+    + Wrap control fields.
+    + Update maintainer to pkg-multimedia.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 19 Apr 2008 23:12:39 +0200
+
+libreplaygain (1.0~r394-1) experimental; urgency=high
+
+  * Initial version (Closes: #474704).
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 07 Apr 2008 12:35:20 +0200
+

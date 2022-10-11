@@ -1,0 +1,4 @@
+version=3
+opts=uversionmangle=s/^/1.0~r/ \
+http://www.musepack.net/index.php?pg=src \
+http://files.musepack.net/source/libreplaygain_r([0-9]+)\.tar\.gz

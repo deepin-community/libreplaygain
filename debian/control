@@ -1,0 +1,42 @@
+Source: libreplaygain
+Section: sound
+Priority: optional
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Uploaders: Sebastian Dröge <slomo@debian.org>,
+           Jorge Salamero Sanz <bencer@cauterized.net>
+Build-Depends: automake,
+               dh-autoreconf,
+               cdbs (>= 0.4.93~),
+               debhelper (>= 9),
+               libtool
+Standards-Version: 3.9.2
+Homepage: http://www.replaygain.org
+Vcs-Git: git://git.debian.org/pkg-multimedia/libreplaygain.git
+Vcs-Browser: http://git.debian.org/?p=pkg-multimedia/libreplaygain.git
+
+Package: libreplaygain1
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Section: libs
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: musepack-tools (<< 1:0.1~r406)
+Description: Calculate ReplayGain information - library
+ libreplaygain calculates the perceived loudness of audio and
+ suggests dB adjustments according to the ReplayGain standard.
+ .
+ This package provides the shared library.
+
+Package: libreplaygain-dev
+Architecture: any
+Section: libdevel
+Multi-Arch: same
+Depends: libreplaygain1 (= ${binary:Version}),
+         ${misc:Depends}
+Description: Calculate ReplayGain information - development files
+ libreplaygain calculates the perceived loudness of audio and
+ suggests dB adjustments according to the ReplayGain standard.
+ .
+ This package contains the header files, static libraries
+ and symbolic links that developers using libreplaygain will need.

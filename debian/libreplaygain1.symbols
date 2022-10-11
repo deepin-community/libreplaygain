@@ -1,0 +1,6 @@
+libreplaygain.so.1 libreplaygain1 #MINVER#
+ gain_analyze_samples@Base 1.0~r412
+ gain_get_album@Base 1.0~r412
+ gain_get_chapter@Base 1.0~r412
+ gain_get_title@Base 1.0~r412
+ gain_init_analysis@Base 1.0~r412
